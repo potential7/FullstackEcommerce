@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ES2020", // JavaScript version output
+        "module": "esnext", // For Node.js. Use "ESNext" for frontend/ESM
+        "strict": true, // Enable all strict type-checking options
+        "esModuleInterop": true, // Allow default imports from CommonJS
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true, // Speed up builds by skipping .d.ts checks
+        "outDir": "dist", // Output directory for compiled files
+        "rootDir": "src", // Root directory of source files
+        "moduleResolution": "node", // Resolve modules using Node-style
+        "resolveJsonModule": true, // Allow importing JSON files
+        "allowJs": true, // Allow compiling .js files too (optional)
+        "noEmit": false // Set to true if you want type-check only
+    },
+    "include": [
+        "src"
+    ], // Folder containing .ts files
+    "exclude": [
+        "node_modules",
+        "dist"
+    ] // Exclude build artifacts and deps
+}
